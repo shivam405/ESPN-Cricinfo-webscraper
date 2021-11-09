@@ -94,7 +94,6 @@ function processPlayer(teamName,playerName,runs,balls,fours,sixes,strikeRate,opp
     let content=excelReader(filepath,playerName);
 
     let playerObj={
-        //"teamName":"teamName" it's short form is teamName only both the key value assign to it
         teamName,
         playerName,
         runs,
@@ -119,7 +118,7 @@ function dirCreator(filepath)
     }
 }
 
-////////////////////write in excel
+
 function excelWriter(filepath,json,sheetName)
 {
     //new worksheet
@@ -135,7 +134,7 @@ function excelWriter(filepath,json,sheetName)
 
 
 
-//////////////////////////////////////read in excel
+
 
 function excelReader(filepath,sheetName)
 {
